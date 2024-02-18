@@ -24,6 +24,8 @@ for (let seat of seats) {
 let selectedSeats = 0
 
 function handleSeatClick(e) {
+    if(selectedSeats === 4 ) return
+    
   const seatValue = e.target.value;
 
   // Turning the background to green
